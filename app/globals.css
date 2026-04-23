@@ -1,0 +1,534 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap");
+
+/* ================================================================
+   THEME SYSTEM — CSS Custom Properties
+   4 combos: light-default, dark-default, light-stranger, dark-stranger
+   ================================================================ */
+
+:root {
+  /* Default Light */
+  --bg-body: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --bg-glass: rgba(255,255,255,0.70);
+  --bg-input: #ffffff;
+  --bg-section-alt: #ffffff;
+  --bg-hero-gradient-from: #eef7ff;
+  --bg-hero-gradient-via: #ffffff;
+  --bg-hero-gradient-to: #fff7ed;
+  --bg-hero-blob1: rgba(188,224,255,0.3);
+  --bg-hero-blob2: rgba(255,217,168,0.3);
+  --bg-footer: #0f172a;
+  --bg-badge: #eef7ff;
+
+  --text-heading: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-on-card: #0f172a;
+  --text-link: #1f6cf2;
+  --text-footer: #e2e8f0;
+
+  --border-card: #f1f5f9;
+  --border-input: #e2e8f0;
+  --border-glass: rgba(255,255,255,0.2);
+
+  --gradient-primary: linear-gradient(135deg, #1f6cf2, #06b6d4);
+  --gradient-accent: linear-gradient(135deg, #ff7a10, #f06006);
+  --gradient-text: linear-gradient(to right, #1f6cf2, #ff7a10);
+
+  --shadow-card: 0 4px 6px -1px rgba(15,23,42,0.05), 0 2px 4px -2px rgba(15,23,42,0.05);
+  --shadow-card-hover: 0 10px 15px -3px rgba(15,23,42,0.1), 0 4px 6px -4px rgba(15,23,42,0.1);
+
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-hover: #94a3b8;
+
+  /* Stranger Things specials (not active in default) */
+  --neon-glow: none;
+  --text-neon: inherit;
+  --bg-particles: none;
+
+  /* Driftory coastal theme extension */
+  --driftory-teal: #0F9B8E;
+  --driftory-amber: #F59E0B;
+  --driftory-coral: #E8593C;
+  --driftory-surface: #F0FDF9;
+  --driftory-surface-dark: #0D2B26;
+}
+
+/* ==================== DARK DEFAULT ==================== */
+[data-theme-mode="dark"][data-theme-flavor="default"] {
+  --bg-body: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-hover: #334155;
+  --bg-glass: rgba(30,41,59,0.80);
+  --bg-input: #1e293b;
+  --bg-section-alt: #1e293b;
+  --bg-hero-gradient-from: #0f172a;
+  --bg-hero-gradient-via: #1e293b;
+  --bg-hero-gradient-to: #0f172a;
+  --bg-hero-blob1: rgba(31,108,242,0.15);
+  --bg-hero-blob2: rgba(255,122,16,0.12);
+  --bg-footer: #020617;
+  --bg-badge: rgba(31,108,242,0.15);
+
+  --text-heading: #f1f5f9;
+  --text-body: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-on-card: #f1f5f9;
+  --text-link: #59b0ff;
+  --text-footer: #94a3b8;
+
+  --border-card: #334155;
+  --border-input: #475569;
+  --border-glass: rgba(255,255,255,0.08);
+  
+  --shadow-card: 0 4px 6px -1px rgba(0,0,0,0.3);
+  --shadow-card-hover: 0 10px 15px -3px rgba(0,0,0,0.5);
+  --scrollbar-thumb: #475569;
+  --scrollbar-hover: #64748b;
+}
+
+/* ==================== STRANGER THINGS LIGHT ==================== */
+[data-theme-flavor="stranger"] {
+  --bg-body: #1a0a0a;
+  --bg-card: #2a0f0f;
+  --bg-card-hover: #3d1515;
+  --bg-glass: rgba(42,15,15,0.85);
+  --bg-input: #2a0f0f;
+  --bg-section-alt: #1f0c0c;
+  --bg-hero-gradient-from: #0d0000;
+  --bg-hero-gradient-via: #1a0505;
+  --bg-hero-gradient-to: #1a0a00;
+  --bg-hero-blob1: rgba(255,0,0,0.12);
+  --bg-hero-blob2: rgba(255,60,0,0.10);
+  --bg-footer: #0a0000;
+  --bg-badge: rgba(255,50,50,0.15);
+
+  --text-heading: #ff3333;
+  --text-body: #d4a0a0;
+  --text-muted: #a06060;
+  --text-on-card: #ffcccc;
+  --text-link: #ff5555;
+  --text-footer: #a06060;
+
+  --border-card: #4a1a1a;
+  --border-input: #5a2020;
+  --border-glass: rgba(255,50,50,0.15);
+
+  --gradient-primary: linear-gradient(135deg, #ff1a1a, #ff4500);
+  --gradient-accent: linear-gradient(135deg, #ff4500, #ff0066);
+  --gradient-text: linear-gradient(to right, #ff1a1a, #ff6600);
+
+  --shadow-card: 0 4px 20px -4px rgba(255,0,0,0.15);
+  --shadow-card-hover: 0 8px 30px -4px rgba(255,0,0,0.3);
+  --scrollbar-thumb: #4a1a1a;
+  --scrollbar-hover: #6a2a2a;
+
+  --neon-glow: 0 0 10px rgba(255,50,50,0.4), 0 0 40px rgba(255,50,50,0.15);
+  --text-neon: #ff3333;
+}
+
+/* Stranger + Dark is same base but deeper */
+[data-theme-mode="dark"][data-theme-flavor="stranger"] {
+  --bg-body: #0a0000;
+  --bg-card: #1a0808;
+  --bg-card-hover: #2a0f0f;
+  --bg-glass: rgba(20,5,5,0.90);
+  --bg-hero-gradient-from: #050000;
+  --bg-hero-gradient-via: #0a0000;
+  --bg-hero-gradient-to: #050000;
+  --bg-hero-blob1: rgba(255,0,0,0.08);
+  --bg-hero-blob2: rgba(255,60,0,0.06);
+}
+
+/* ================================================================
+   BASE STYLES — read from custom props
+   ================================================================ */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  h1, h2, h3 {
+    font-family: "Outfit", system-ui, sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text-heading);
+    transition: color 0.4s ease;
+  }
+
+  h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; }
+  h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; }
+  h3 { font-size: clamp(1.125rem, 2vw, 1.5rem); font-weight: 600; }
+}
+
+/* ================================================================
+   COMPONENT CLASSES — now theme-aware
+   ================================================================ */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-xl font-semibold
+      transition-all duration-200 ease-out
+      hover:-translate-y-0.5 active:translate-y-0;
+    background: var(--gradient-primary);
+    color: #ffffff;
+    box-shadow: 0 8px 16px -4px rgba(31,108,242,0.3);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 12px 24px -4px rgba(31,108,242,0.4);
+    filter: brightness(1.1);
+  }
+
+  [data-theme-flavor="stranger"] .btn-primary {
+    box-shadow: 0 8px 16px -4px rgba(255,0,0,0.3);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-200;
+    background: var(--bg-card);
+    color: var(--text-link);
+    border: 2px solid var(--border-input);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--text-link);
+    filter: brightness(1.05);
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-200 ease-out;
+    background: var(--gradient-accent);
+    color: #ffffff;
+    box-shadow: 0 8px 16px -4px rgba(255,122,16,0.3);
+  }
+
+  .card {
+    @apply rounded-2xl p-6 transition-all duration-300;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    box-shadow: var(--shadow-card);
+    color: var(--text-on-card);
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .glass {
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-glass);
+    box-shadow: var(--shadow-card);
+    transition: background 0.4s ease;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl outline-none transition-all duration-200;
+    background: var(--bg-input);
+    color: var(--text-heading);
+    border: 2px solid var(--border-input);
+  }
+
+  .input-field::placeholder {
+    color: var(--text-muted);
+  }
+
+  .input-field:focus {
+    border-color: var(--text-link);
+    box-shadow: 0 0 0 4px rgba(31,108,242,0.1);
+  }
+
+  [data-theme-flavor="stranger"] .input-field:focus {
+    border-color: #ff3333;
+    box-shadow: 0 0 0 4px rgba(255,50,50,0.15);
+  }
+
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-train { @apply badge bg-blue-100 text-blue-800; }
+  .badge-bus { @apply badge bg-green-100 text-green-800; }
+  .badge-hotel { @apply badge bg-purple-100 text-purple-800; }
+  .badge-driftory { @apply badge; background-color: rgba(15,155,142,0.1); color: #0F9B8E; }
+  .badge-driftory-warn { @apply badge; background-color: rgba(232,89,60,0.1); color: #E8593C; }
+
+  /* Theme Toggle Button */
+  .theme-toggle-btn {
+    @apply w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    cursor: pointer;
+  }
+  .theme-toggle-btn:hover {
+    transform: scale(1.15) rotate(15deg);
+    box-shadow: var(--shadow-card-hover);
+  }
+  .theme-toggle-btn.stranger-active {
+    border-color: #ff3333;
+    box-shadow: 0 0 12px rgba(255,50,50,0.5), 0 0 30px rgba(255,50,50,0.2);
+    animation: neonPulse 2s ease-in-out infinite;
+  }
+}
+
+/* ================================================================
+   STRANGER THINGS SPECIAL EFFECTS
+   ================================================================ */
+
+/* Neon glow headings */
+[data-theme-flavor="stranger"] h1,
+[data-theme-flavor="stranger"] h2 {
+  text-shadow: 0 0 10px rgba(255,50,50,0.4), 0 0 40px rgba(255,50,50,0.15), 0 0 80px rgba(255,50,50,0.05);
+}
+
+/* Flickering neon animation for the whole stranger theme */
+@keyframes neonPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(255,50,50,0.4), 0 0 20px rgba(255,50,50,0.15); }
+  50% { box-shadow: 0 0 16px rgba(255,50,50,0.7), 0 0 40px rgba(255,50,50,0.3); }
+}
+
+@keyframes flickerGlow {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px rgba(255,50,50,0.5), 0 0 40px rgba(255,50,50,0.2); }
+  20%, 24%, 55% { text-shadow: none; }
+}
+
+[data-theme-flavor="stranger"] .gradient-text {
+  background: linear-gradient(to right, #ff1a1a, #ff6600) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  filter: drop-shadow(0 0 8px rgba(255,50,50,0.3));
+}
+
+/* Card neon border glow in stranger mode */
+[data-theme-flavor="stranger"] .card:hover {
+  border-color: rgba(255,50,50,0.4);
+  box-shadow: 0 0 20px rgba(255,0,0,0.15), 0 8px 30px -4px rgba(255,0,0,0.2);
+}
+
+/* Buttons neon in stranger mode */
+[data-theme-flavor="stranger"] .btn-primary:hover {
+  box-shadow: 0 0 20px rgba(255,0,0,0.4), 0 12px 24px -4px rgba(255,0,0,0.3);
+}
+
+/* Badge dark overrides */
+[data-theme-mode="dark"] .badge-train { @apply bg-blue-900/30 text-blue-300; }
+[data-theme-mode="dark"] .badge-bus { @apply bg-green-900/30 text-green-300; }
+[data-theme-mode="dark"] .badge-hotel { @apply bg-purple-900/30 text-purple-300; }
+[data-theme-flavor="stranger"] .badge-train { background: rgba(255,50,50,0.15); color: #ff8888; }
+[data-theme-flavor="stranger"] .badge-bus { background: rgba(255,100,0,0.15); color: #ffa566; }
+[data-theme-flavor="stranger"] .badge-hotel { background: rgba(255,0,100,0.15); color: #ff66aa; }
+
+/* ================================================================
+   SCROLLBAR
+   ================================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+@media (max-width: 640px) {
+  .card { @apply p-4; }
+  .section-padding { @apply py-12; }
+}
+
+/* ================================================================
+   PAGE-LEVEL THEME OVERRIDES
+   These apply var() to commonly hardcoded Tailwind bg/text classes.
+   ================================================================ */
+
+/* Fix all the bg-white sections */
+[data-theme-mode="dark"] .bg-white,
+[data-theme-flavor="stranger"] .bg-white {
+  background-color: var(--bg-card) !important;
+}
+
+[data-theme-mode="dark"] .bg-surface-50,
+[data-theme-flavor="stranger"] .bg-surface-50 {
+  background-color: var(--bg-body) !important;
+}
+
+[data-theme-mode="dark"] .text-surface-900,
+[data-theme-flavor="stranger"] .text-surface-900 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme-mode="dark"] .text-surface-800,
+[data-theme-flavor="stranger"] .text-surface-800 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme-mode="dark"] .text-surface-700,
+[data-theme-flavor="stranger"] .text-surface-700 {
+  color: var(--text-body) !important;
+}
+
+/* Make hero heading pop against the bright diagonal gradient */
+[data-theme-mode="dark"] h1 {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6), 0 0 40px rgba(0,0,0,0.3);
+}
+
+[data-theme-mode="dark"] .text-surface-600,
+[data-theme-flavor="stranger"] .text-surface-600 {
+  color: var(--text-body) !important;
+}
+
+[data-theme-mode="dark"] .text-surface-500,
+[data-theme-flavor="stranger"] .text-surface-500 {
+  color: var(--text-muted) !important;
+}
+
+[data-theme-mode="dark"] .border-surface-100,
+[data-theme-flavor="stranger"] .border-surface-100 {
+  border-color: var(--border-card) !important;
+}
+
+[data-theme-mode="dark"] .border-surface-200,
+[data-theme-flavor="stranger"] .border-surface-200 {
+  border-color: var(--border-card) !important;
+}
+
+[data-theme-mode="dark"] .bg-surface-100,
+[data-theme-flavor="stranger"] .bg-surface-100 {
+  background-color: var(--bg-card-hover) !important;
+}
+
+[data-theme-mode="dark"] .bg-primary-50,
+[data-theme-flavor="stranger"] .bg-primary-50 {
+  background-color: var(--bg-badge) !important;
+}
+
+[data-theme-mode="dark"] .bg-primary-100,
+[data-theme-flavor="stranger"] .bg-primary-100 {
+  background-color: var(--bg-badge) !important;
+}
+
+/* Hero section gradient fix */
+[data-theme-mode="dark"] .from-primary-50,
+[data-theme-flavor="stranger"] .from-primary-50 {
+  --tw-gradient-from: var(--bg-hero-gradient-from) !important;
+}
+
+[data-theme-mode="dark"] .via-white,
+[data-theme-flavor="stranger"] .via-white {
+  --tw-gradient-via: var(--bg-hero-gradient-via) !important;
+}
+
+[data-theme-mode="dark"] .to-accent-50,
+[data-theme-flavor="stranger"] .to-accent-50 {
+  --tw-gradient-to: var(--bg-hero-gradient-to) !important;
+}
+
+/* Shadow tones in dark/stranger */
+[data-theme-mode="dark"] .shadow-md,
+[data-theme-flavor="stranger"] .shadow-md {
+  box-shadow: var(--shadow-card) !important;
+}
+
+/* Footer */
+[data-theme-flavor="stranger"] .bg-surface-900 {
+  background-color: var(--bg-footer) !important;
+}
+
+/* ================================================================
+   ANIMATION KEYFRAMES
+   ================================================================ */
+@keyframes float {
+  0% { transform: translateY(0px) translateX(0px); }
+  100% { transform: translateY(-20px) translateX(8px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Smooth hover lift for all interactive cards */
+.card {
+  transition: transform 0.4s cubic-bezier(0.03,0.98,0.52,0.99), box-shadow 0.4s ease, border-color 0.4s ease !important;
+}
+
+/* Premium shimmer loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-card-hover) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Image hover zoom (used in TrendingSections) */
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.img-zoom:hover, .group:hover .img-zoom {
+  transform: scale(1.08);
+}
+
+/* Body smooth transition helper */
+* {
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+/* Focus ring global override for theme */
+:focus-visible {
+  outline: 2px solid var(--text-link);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth page transition */
+main {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
