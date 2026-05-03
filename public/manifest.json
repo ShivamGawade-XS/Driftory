@@ -1,0 +1,16 @@
+{
+  "name": "TripSathi",
+  "short_name": "TripSathi",
+  "description": "India's unified travel companion. Compare trains, buses, hotels — all in one place.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4F46E5",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "categories": ["travel", "transportation", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr"
+}
