@@ -1,0 +1,754 @@
+[
+  {
+    "id": "PKG001",
+    "title": "Golden Triangle — Delhi Agra Jaipur",
+    "slug": "golden-triangle-delhi-agra-jaipur",
+    "destination": "Delhi, Agra, Jaipur",
+    "category": "heritage",
+    "duration": {
+      "days": 5,
+      "nights": 4
+    },
+    "price": {
+      "original": 18500,
+      "discounted": 14999,
+      "currency": "INR"
+    },
+    "rating": 4.6,
+    "reviewCount": 342,
+    "maxGroupSize": 20,
+    "difficulty": "easy",
+    "coverImage": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
+      "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=800",
+      "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800",
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800"
+    ],
+    "highlights": [
+      "Taj Mahal sunrise visit",
+      "Hawa Mahal walking tour",
+      "Amber Fort jeep ride",
+      "Old Delhi street food walk",
+      "Agra Fort guided tour"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Delhi",
+        "description": "Welcome at Delhi airport. Visit India Gate, Qutub Minar, and Lotus Temple.",
+        "activities": [
+          "Airport pickup",
+          "India Gate",
+          "Qutub Minar",
+          "Lotus Temple",
+          "Welcome dinner"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Delhi to Agra",
+        "description": "Morning drive to Agra. Visit Taj Mahal at sunset and Agra Fort.",
+        "activities": [
+          "Drive to Agra (4h)",
+          "Lunch",
+          "Agra Fort tour",
+          "Taj Mahal sunset visit"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Agra to Jaipur",
+        "description": "Sunrise at Taj Mahal, then drive to Jaipur via Fatehpur Sikri.",
+        "activities": [
+          "Taj Mahal sunrise",
+          "Fatehpur Sikri stop",
+          "Drive to Jaipur (5h)",
+          "Evening Jaipur market walk"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Explore Jaipur",
+        "description": "Full day Jaipur — Amber Fort, City Palace, Hawa Mahal, and Jantar Mantar.",
+        "activities": [
+          "Amber Fort jeep ride",
+          "City Palace",
+          "Hawa Mahal",
+          "Jantar Mantar",
+          "Farewell dinner"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Morning free time, then transfer to Jaipur airport or Delhi by train.",
+        "activities": [
+          "Free time",
+          "Checkout",
+          "Airport/station transfer"
+        ]
+      }
+    ],
+    "inclusions": [
+      "4-star hotel accommodation",
+      "Daily breakfast",
+      "AC transport",
+      "English-speaking guide",
+      "Monument entry fees",
+      "Airport transfers"
+    ],
+    "exclusions": [
+      "Flights",
+      "Lunch & dinner (except welcome & farewell)",
+      "Personal expenses",
+      "Camera fees at monuments",
+      "Travel insurance"
+    ],
+    "transport": "mixed",
+    "startCity": "Delhi",
+    "featured": true,
+    "seasonal": false,
+    "groupDeal": false
+  },
+  {
+    "id": "PKG002",
+    "title": "Goa Beach Bliss — 4 Days",
+    "slug": "goa-beach-bliss-4-days",
+    "destination": "Goa",
+    "category": "beach",
+    "duration": {
+      "days": 4,
+      "nights": 3
+    },
+    "price": {
+      "original": 12000,
+      "discounted": 8999,
+      "currency": "INR"
+    },
+    "rating": 4.4,
+    "reviewCount": 218,
+    "maxGroupSize": 15,
+    "difficulty": "easy",
+    "coverImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+      "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=800"
+    ],
+    "highlights": [
+      "Baga Beach sunset",
+      "Old Goa churches",
+      "Dudhsagar waterfall trip",
+      "Spice plantation visit",
+      "Cruise party"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Goa",
+        "description": "Airport pickup and check into beach resort. Evening at Baga Beach.",
+        "activities": [
+          "Airport pickup",
+          "Hotel check-in",
+          "Baga Beach sunset",
+          "Welcome dinner"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "North Goa Tour",
+        "description": "Visit Fort Aguada, Calangute Beach, Anjuna flea market.",
+        "activities": [
+          "Fort Aguada",
+          "Calangute Beach",
+          "Anjuna flea market",
+          "Beach shack dinner"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "South Goa & Cruise",
+        "description": "Visit Old Goa churches, Mangueshi Temple, evening river cruise.",
+        "activities": [
+          "Old Goa churches",
+          "Mangueshi Temple",
+          "Spice plantation",
+          "River cruise party"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Departure",
+        "description": "Free morning for shopping, then airport transfer.",
+        "activities": [
+          "Shopping",
+          "Checkout",
+          "Airport transfer"
+        ]
+      }
+    ],
+    "inclusions": [
+      "3-star beach resort",
+      "Daily breakfast",
+      "AC transport",
+      "River cruise ticket",
+      "Airport transfers"
+    ],
+    "exclusions": [
+      "Flights",
+      "Lunch & dinner",
+      "Water sports charges",
+      "Personal expenses"
+    ],
+    "transport": "mixed",
+    "startCity": "Goa",
+    "featured": true,
+    "seasonal": true,
+    "groupDeal": true
+  },
+  {
+    "id": "PKG003",
+    "title": "Manali Adventure Camp — 6 Days",
+    "slug": "manali-adventure-camp-6-days",
+    "destination": "Manali, Himachal Pradesh",
+    "category": "adventure",
+    "duration": {
+      "days": 6,
+      "nights": 5
+    },
+    "price": {
+      "original": 22000,
+      "discounted": 17500,
+      "currency": "INR"
+    },
+    "rating": 4.7,
+    "reviewCount": 156,
+    "maxGroupSize": 12,
+    "difficulty": "moderate",
+    "coverImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
+      "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+    ],
+    "highlights": [
+      "Rohtang Pass trip",
+      "River rafting",
+      "Paragliding in Solang",
+      "Hampta Pass trek",
+      "Bonfire nights"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Manali",
+        "description": "Arrive in Manali, check into camp, evening bonfire.",
+        "activities": [
+          "Arrival",
+          "Camp check-in",
+          "Orientation",
+          "Bonfire"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Solang Valley",
+        "description": "Paragliding, zorbing, and zip-lining at Solang Valley.",
+        "activities": [
+          "Paragliding",
+          "Zorbing",
+          "Zip-lining",
+          "Snow point visit"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "River Rafting",
+        "description": "White water rafting on Beas River, afternoon Hadimba Temple.",
+        "activities": [
+          "River rafting",
+          "Hadimba Temple",
+          "Mall Road walk"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Rohtang Pass",
+        "description": "Full day Rohtang Pass excursion with snow activities.",
+        "activities": [
+          "Drive to Rohtang",
+          "Snow activities",
+          "Photography",
+          "Return"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Hampta Valley Trek",
+        "description": "Trek to Hampta Valley, waterfall visit, camping.",
+        "activities": [
+          "Trek to Hampta",
+          "Waterfall visit",
+          "Picnic lunch",
+          "Return trek"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Departure",
+        "description": "Morning yoga, checkout, and departure.",
+        "activities": [
+          "Morning yoga",
+          "Checkout",
+          "Departure"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Camp accommodation",
+      "All meals",
+      "Adventure activities",
+      "Trekking gear",
+      "Professional guides",
+      "Transport"
+    ],
+    "exclusions": [
+      "Travel to Manali",
+      "Personal gear",
+      "Insurance",
+      "Tips"
+    ],
+    "transport": "bus",
+    "startCity": "Manali",
+    "featured": false,
+    "seasonal": true,
+    "groupDeal": true
+  },
+  {
+    "id": "PKG004",
+    "title": "Kerala Backwaters — 5 Days",
+    "slug": "kerala-backwaters-5-days",
+    "destination": "Kochi, Munnar, Alleppey",
+    "category": "honeymoon",
+    "duration": {
+      "days": 5,
+      "nights": 4
+    },
+    "price": {
+      "original": 25000,
+      "discounted": 19999,
+      "currency": "INR"
+    },
+    "rating": 4.8,
+    "reviewCount": 289,
+    "maxGroupSize": 8,
+    "difficulty": "easy",
+    "coverImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800",
+      "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800",
+      "https://images.unsplash.com/photo-1609340667117-175e5832e87f?w=800"
+    ],
+    "highlights": [
+      "Houseboat stay in Alleppey",
+      "Munnar tea gardens",
+      "Kathakali dance show",
+      "Spice garden visit",
+      "Fort Kochi walking tour"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Kochi",
+        "description": "Arrive Kochi, visit Fort Kochi, Chinese fishing nets, evening Kathakali show.",
+        "activities": [
+          "Airport pickup",
+          "Fort Kochi",
+          "Chinese fishing nets",
+          "Kathakali show"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Kochi to Munnar",
+        "description": "Drive to Munnar through tea plantations and waterfalls.",
+        "activities": [
+          "Drive to Munnar",
+          "Cheeyappara Waterfalls",
+          "Tea museum visit",
+          "Resort check-in"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Explore Munnar",
+        "description": "Visit Eravikulam National Park, Top Station, tea gardens.",
+        "activities": [
+          "Eravikulam Park",
+          "Top Station",
+          "Tea gardens",
+          "Spice garden"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Munnar to Alleppey",
+        "description": "Drive to Alleppey, board private houseboat for overnight cruise.",
+        "activities": [
+          "Drive to Alleppey",
+          "Houseboat boarding",
+          "Backwater cruise",
+          "Fresh seafood dinner"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "description": "Morning on houseboat, disembark, transfer to Kochi airport.",
+        "activities": [
+          "Houseboat morning",
+          "Disembark",
+          "Airport transfer"
+        ]
+      }
+    ],
+    "inclusions": [
+      "4-star hotels + houseboat",
+      "Daily breakfast & dinner",
+      "AC transport",
+      "Guide",
+      "Houseboat meals",
+      "Airport transfers"
+    ],
+    "exclusions": [
+      "Flights",
+      "Lunch",
+      "Entry fees",
+      "Personal expenses",
+      "Tips"
+    ],
+    "transport": "mixed",
+    "startCity": "Kochi",
+    "featured": true,
+    "seasonal": false,
+    "groupDeal": false
+  },
+  {
+    "id": "PKG005",
+    "title": "Varanasi Spiritual Journey — 3 Days",
+    "slug": "varanasi-spiritual-journey-3-days",
+    "destination": "Varanasi",
+    "category": "pilgrimage",
+    "duration": {
+      "days": 3,
+      "nights": 2
+    },
+    "price": {
+      "original": 9500,
+      "discounted": 6999,
+      "currency": "INR"
+    },
+    "rating": 4.5,
+    "reviewCount": 198,
+    "maxGroupSize": 25,
+    "difficulty": "easy",
+    "coverImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800",
+      "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800"
+    ],
+    "highlights": [
+      "Ganga Aarti ceremony",
+      "Sunrise boat ride",
+      "Sarnath Buddhist site",
+      "Old city walking tour",
+      "Silk weaving demo"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Varanasi",
+        "description": "Arrive, hotel check-in, evening Ganga Aarti at Dashashwamedh Ghat.",
+        "activities": [
+          "Airport/station pickup",
+          "Hotel check-in",
+          "Ganga Aarti"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Full Day Varanasi",
+        "description": "Sunrise boat ride, temple visits, afternoon Sarnath excursion.",
+        "activities": [
+          "Sunrise boat ride",
+          "Kashi Vishwanath Temple",
+          "Old city walk",
+          "Sarnath visit",
+          "Silk weaving"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Departure",
+        "description": "Morning prayer, checkout, transfer.",
+        "activities": [
+          "Morning ghat walk",
+          "Checkout",
+          "Departure transfer"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Hotel accommodation",
+      "Breakfast",
+      "Boat ride",
+      "Local transport",
+      "Guide",
+      "Transfers"
+    ],
+    "exclusions": [
+      "Travel to Varanasi",
+      "Lunch & dinner",
+      "Temple donations",
+      "Personal expenses"
+    ],
+    "transport": "train",
+    "startCity": "Varanasi",
+    "featured": false,
+    "seasonal": false,
+    "groupDeal": true
+  },
+  {
+    "id": "PKG006",
+    "title": "Rajasthan Royal Circuit — 7 Days",
+    "slug": "rajasthan-royal-circuit-7-days",
+    "destination": "Jaipur, Jodhpur, Udaipur, Jaisalmer",
+    "category": "heritage",
+    "duration": {
+      "days": 7,
+      "nights": 6
+    },
+    "price": {
+      "original": 35000,
+      "discounted": 27999,
+      "currency": "INR"
+    },
+    "rating": 4.9,
+    "reviewCount": 412,
+    "maxGroupSize": 16,
+    "difficulty": "easy",
+    "coverImage": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800",
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800",
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800"
+    ],
+    "highlights": [
+      "Jaisalmer desert camp",
+      "Udaipur lake palace",
+      "Mehrangarh Fort",
+      "Camel safari",
+      "Royal Rajasthani thali dinner"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Jaipur",
+        "description": "Welcome in the Pink City. Evening heritage walk.",
+        "activities": [
+          "Airport pickup",
+          "Hotel check-in",
+          "Heritage walk"
+        ]
+      },
+      {
+        "day": 2,
+        "title": "Jaipur Sightseeing",
+        "description": "Amber Fort, City Palace, Hawa Mahal.",
+        "activities": [
+          "Amber Fort",
+          "City Palace",
+          "Hawa Mahal",
+          "Jantar Mantar"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Jaipur to Jodhpur",
+        "description": "Drive to Blue City, visit Mehrangarh Fort.",
+        "activities": [
+          "Drive to Jodhpur",
+          "Mehrangarh Fort",
+          "Blue city walk"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Jodhpur to Jaisalmer",
+        "description": "Drive to Golden City, evening at Sam sand dunes.",
+        "activities": [
+          "Drive to Jaisalmer",
+          "Jaisalmer Fort",
+          "Sam sand dunes",
+          "Desert camp dinner"
+        ]
+      },
+      {
+        "day": 5,
+        "title": "Jaisalmer",
+        "description": "Camel safari, Patwon ki Haveli, Gadisar Lake.",
+        "activities": [
+          "Camel safari",
+          "Patwon ki Haveli",
+          "Gadisar Lake"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Jaisalmer to Udaipur",
+        "description": "Drive to City of Lakes, evening Lake Pichola boat ride.",
+        "activities": [
+          "Drive to Udaipur",
+          "Lake Pichola",
+          "City Palace",
+          "Boat ride"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Departure",
+        "description": "Morning free, departure from Udaipur.",
+        "activities": [
+          "Free time",
+          "Checkout",
+          "Airport transfer"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Heritage hotels",
+      "All meals",
+      "AC transport",
+      "Desert camp stay",
+      "Guide",
+      "All entry fees",
+      "Camel safari"
+    ],
+    "exclusions": [
+      "Flights",
+      "Personal expenses",
+      "Camera fees",
+      "Tips",
+      "Insurance"
+    ],
+    "transport": "mixed",
+    "startCity": "Jaipur",
+    "featured": true,
+    "seasonal": false,
+    "groupDeal": false
+  },
+  {
+    "id": "PKG007",
+    "title": "Kedarnath Yatra Elite",
+    "slug": "kedarnath-yatra-elite",
+    "destination": "Kedarnath",
+    "category": "pilgrimage",
+    "duration": {
+      "days": 4,
+      "nights": 3
+    },
+    "price": {
+      "original": 16000,
+      "discounted": 12500,
+      "currency": "INR"
+    },
+    "rating": 4.9,
+    "reviewCount": 520,
+    "maxGroupSize": 10,
+    "difficulty": "hard",
+    "coverImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800"
+    ],
+    "highlights": [
+      "Helicopter transfer options",
+      "VIP Darshan",
+      "Trekking assist",
+      "Premium tents"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Guptkashi",
+        "description": "Drive to Guptkashi, rest",
+        "activities": [
+          "Travel"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Tents",
+      "Meals"
+    ],
+    "exclusions": [
+      "Helicopter"
+    ],
+    "transport": "mixed",
+    "startCity": "Haridwar",
+    "featured": true,
+    "seasonal": true,
+    "groupDeal": true
+  },
+  {
+    "id": "PKG008",
+    "title": "Ooty & Coonoor Escape",
+    "slug": "ooty-coonoor-escape",
+    "destination": "Ooty",
+    "category": "family",
+    "duration": {
+      "days": 3,
+      "nights": 2
+    },
+    "price": {
+      "original": 10000,
+      "discounted": 7999,
+      "currency": "INR"
+    },
+    "rating": 4.3,
+    "reviewCount": 89,
+    "maxGroupSize": 20,
+    "difficulty": "easy",
+    "coverImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800"
+    ],
+    "highlights": [
+      "Toy Train Ride",
+      "Botanical Garden",
+      "Dolphin Nose"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive Ooty",
+        "description": "Check in, Botanical gardens",
+        "activities": [
+          "Sightseeing"
+        ]
+      }
+    ],
+    "inclusions": [
+      "Hotel",
+      "Breakfast"
+    ],
+    "exclusions": [
+      "Flights"
+    ],
+    "transport": "bus",
+    "startCity": "Bangalore",
+    "featured": false,
+    "seasonal": false,
+    "groupDeal": true
+  }
+]
