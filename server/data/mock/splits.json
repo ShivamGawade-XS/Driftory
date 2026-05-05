@@ -1,0 +1,45 @@
+{
+  "6D5ED0": {
+    "code": "6D5ED0",
+    "name": "Goa Trip 2026",
+    "travelers": [
+      {
+        "id": "T1",
+        "name": "You"
+      },
+      {
+        "id": "T2",
+        "name": "Rahul"
+      }
+    ],
+    "expenses": [
+      {
+        "id": "E1775245288097",
+        "desc": "Hotel",
+        "amount": 6000,
+        "paidBy": "T1"
+      },
+      {
+        "id": "E1775245288101",
+        "desc": "Cab",
+        "amount": 2000,
+        "paidBy": "T2"
+      }
+    ],
+    "createdAt": "2026-04-03T19:41:28.082Z",
+    "updatedAt": "2026-04-03T19:41:28.101Z"
+  },
+  "8CA8D9": {
+    "code": "8CA8D9",
+    "name": "Test Trip",
+    "travelers": [
+      {
+        "id": "T1",
+        "name": "You"
+      }
+    ],
+    "expenses": [],
+    "createdAt": "2026-04-03T19:46:02.983Z",
+    "updatedAt": "2026-04-03T19:46:02.983Z"
+  }
+}
