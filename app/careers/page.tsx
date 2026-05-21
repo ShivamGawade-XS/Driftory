@@ -2,7 +2,7 @@
 import { useLanguage } from "@/context/LanguageContext"
 
 const str: Record<string, Record<string, string>> = {
-  en: { title: "Join the TripSathi Team", subtitle: "We are building the infrastructure for Indian travel. Help us make journeys unforgettable.", open: "Open Positions", apply: "Apply Now", noFit: "Don't see a perfect fit?", sendResume: "Send us your resume at" },
+  en: { title: "Join the Driftory Team", subtitle: "We are building the infrastructure for Indian travel. Help us make journeys unforgettable.", open: "Open Positions", apply: "Apply Now", noFit: "Don't see a perfect fit?", sendResume: "Send us your resume at" },
   hi: { title: "ट्रिपसाथी टीम से जुड़ें", subtitle: "हम भारतीय यात्रा का बुनियादी ढांचा बना रहे हैं। यात्राओं को अविस्मरणीय बनाने में हमारी मदद करें।", open: "खुली पोजीशन", apply: "अभी आवेदन करें", noFit: "सही पद नहीं दिखा?", sendResume: "अपना रिज्यूम भेजें" },
   ta: { title: "டிரிப்சாதி குழுவில் சேருங்கள்", subtitle: "இந்திய பயணத்திற்கான உள்கட்டமைப்பை உருவாக்குகிறோம். பயணங்களை மறக்கமுடியாததாக மாற்ற உதவுங்கள்.", open: "திறந்த பதவிகள்", apply: "இப்போது விண்ணப்பியுங்கள்", noFit: "சரியான பதவி இல்லையா?", sendResume: "உங்கள் ரெஸ்யூமை அனுப்புங்கள்" },
   te: { title: "ట్రిప్‌సాథీ టీమ్‌లో చేరండి", subtitle: "భారత ప్రయాణ మౌలిక సదుపాయాలను నిర్మిస్తున్నాము. ప్రయాణాలను మరపురానివిగా చేయడంలో సహాయపడండి.", open: "ఖాళీ పదవులు", apply: "ఇప్పుడే దరఖాస్తు చేయండి", noFit: "సరైన పదవి కనిపించలేదా?", sendResume: "మీ రెస్యూమ్ పంపండి" },
@@ -45,7 +45,7 @@ export default function CareersPage() {
           </div>
           <div className="mt-12 p-6 bg-primary-50 rounded-xl text-center">
             <h3 className="font-bold text-primary-800 text-lg">{t.noFit}</h3>
-            <p className="text-primary-600 mt-2">{t.sendResume} <strong>careers@tripsathi.com</strong></p>
+            <p className="text-primary-600 mt-2">{t.sendResume} <strong>careers@driftory.com</strong></p>
           </div>
         </div>
       </div>

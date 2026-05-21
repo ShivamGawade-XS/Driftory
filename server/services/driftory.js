@@ -186,7 +186,7 @@ async function validateWithPlacesAPI(spotName, coastline) {
       const query = encodeURIComponent(`${spotName} ${coastline} India`)
       const url = `https://nominatim.openstreetmap.org/search?q=${query}&format=json&limit=1`
       const res = await fetch(url, {
-        headers: { "User-Agent": "TripSathi-Driftory/1.0" },
+        headers: { "User-Agent": "Driftory-Driftory/1.0" },
       })
       const data = await res.json()
 

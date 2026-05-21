@@ -1,7 +1,7 @@
 {
-  "name": "tripsathi-server",
+  "name": "driftory-server",
   "version": "1.0.0",
-  "description": "TripSathi backend API server",
+  "description": "Driftory backend API server",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

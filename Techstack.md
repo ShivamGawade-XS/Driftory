@@ -1,5 +1,5 @@
 # Tech Stack
-## TripSathi — Unified Indian Travel Planning Platform
+## Driftory — Unified Indian Travel Planning Platform
 
 **Team:** Crimson Syndicate
 
@@ -7,7 +7,7 @@
 
 ## Architecture Overview
 
-TripSathi follows a layered **3-tier architecture** — UI Layer, Logic Layer, and Data Layer — deployed on cloud platforms with a clear separation of concerns.
+Driftory follows a layered **3-tier architecture** — UI Layer, Logic Layer, and Data Layer — deployed on cloud platforms with a clear separation of concerns.
 
 ```
 ┌─────────────────────────────────────┐

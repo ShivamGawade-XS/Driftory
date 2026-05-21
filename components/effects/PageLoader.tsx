@@ -57,7 +57,7 @@ export default function PageLoader() {
             transition: "width 0.3s ease",
           }} />
         </div>
-        <p className="text-sm font-medium" style={{ color: "var(--text-muted)" }}>Loading TripSathi...</p>
+        <p className="text-sm font-medium" style={{ color: "var(--text-muted)" }}>Loading Driftory...</p>
       </div>
     </div>
   )

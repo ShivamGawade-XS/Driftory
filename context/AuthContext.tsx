@@ -31,14 +31,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const storedToken = localStorage.getItem("tripsathi_token")
+    const storedToken = localStorage.getItem("driftory_token")
     if (storedToken) {
       setToken(storedToken)
       getMeApi(storedToken)
         .then((data) => setUser(data))
         .catch(() => {
-          localStorage.removeItem("tripsathi_token")
-          localStorage.removeItem("tripsathi_user")
+          localStorage.removeItem("driftory_token")
+          localStorage.removeItem("driftory_user")
         })
         .finally(() => setLoading(false))
     } else {
@@ -49,15 +49,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const login = (newToken: string, newUser: User) => {
     setToken(newToken)
     setUser(newUser)
-    localStorage.setItem("tripsathi_token", newToken)
-    localStorage.setItem("tripsathi_user", JSON.stringify(newUser))
+    localStorage.setItem("driftory_token", newToken)
+    localStorage.setItem("driftory_user", JSON.stringify(newUser))
   }
 
   const logout = () => {
     setToken(null)
     setUser(null)
-    localStorage.removeItem("tripsathi_token")
-    localStorage.removeItem("tripsathi_user")
+    localStorage.removeItem("driftory_token")
+    localStorage.removeItem("driftory_user")
   }
 
   return (

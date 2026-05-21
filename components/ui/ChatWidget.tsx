@@ -6,10 +6,10 @@ interface Message { role: "user" | "bot"; text: string }
 
 const chatStrings: Record<string, Record<string, string>> = {
   en: {
-    title: "TripSathi Support",
+    title: "Driftory Support",
     status: "Online • Replies instantly",
     placeholder: "Type a message...",
-    greeting: "Namaste! 🙏 I'm TripSathi's virtual assistant. How can I help you plan your next adventure?",
+    greeting: "Namaste! 🙏 I'm Driftory's virtual assistant. How can I help you plan your next adventure?",
     qr1: "How do I book a package?",
     qr2: "Cancel my booking",
     qr3: "Payment methods?",
@@ -142,10 +142,10 @@ export default function ChatWidget() {
       }
 
       // Hit Backend NLP Engine for transactional intents
-      let sessionId = typeof window !== "undefined" ? localStorage.getItem("tripsathi_chat_id") : null
+      let sessionId = typeof window !== "undefined" ? localStorage.getItem("driftory_chat_id") : null
       if (!sessionId) {
         sessionId = "session_" + Math.random().toString(36).substr(2, 9)
-        localStorage.setItem("tripsathi_chat_id", sessionId)
+        localStorage.setItem("driftory_chat_id", sessionId)
       }
 
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api/v1"}/whatsapp/chat`, {

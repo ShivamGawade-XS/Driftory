@@ -1,12 +1,12 @@
-# TripSathi 🚆🚌🏨
+# Driftory 🚆🚌🏨
 
 **One Platform. Every Indian Journey.**
 
-TripSathi is a unified travel planning platform that lets you search trains, buses, and hotels in one place. Compare prices, build itineraries, browse curated packages, and share trip plans — designed for every Indian traveler with premium UI and multilingual support.
+Driftory is a unified travel planning platform that lets you search trains, buses, and hotels in one place. Compare prices, build itineraries, browse curated packages, and share trip plans — designed for every Indian traveler with premium UI and multilingual support.
 
 ### 🌍 Live Deployment
-- **Frontend App:** [https://tripsathi-web.vercel.app](https://tripsathi-web.vercel.app)
-- **Backend API:** [https://tripsathi-api.vercel.app](https://tripsathi-api.vercel.app)
+- **Frontend App:** [https://driftory-web.vercel.app](https://driftory-web.vercel.app)
+- **Backend API:** [https://driftory-api.vercel.app](https://driftory-api.vercel.app)
 
 ## ✨ Features
 
@@ -98,7 +98,7 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1
 ```
 PORT=5000
 NODE_ENV=development
-MONGODB_URI=mongodb://localhost:27017/tripsathi
+MONGODB_URI=mongodb://localhost:27017/driftory
 JWT_SECRET=your-secret-key-here
 REDIS_URL=redis://localhost:6379
 USE_MOCK_API=true
@@ -107,7 +107,7 @@ USE_MOCK_API=true
 ## 📁 Project Structure
 
 ```
-TripSathi/
+Driftory/
 ├── app/                    # Next.js App Router pages
 │   ├── layout.tsx          # Root layout with metadata
 │   ├── page.tsx            # Homepage (Hero, Features, Routes, Trending)
@@ -184,7 +184,7 @@ TripSathi/
 
 ## 🎨 Theme System
 
-TripSathi includes a powerful theme system with 4 combinations:
+Driftory includes a powerful theme system with 4 combinations:
 
 | Theme | Description |
 |---|---|
@@ -209,7 +209,7 @@ The app includes comprehensive mock data for demo purposes — no real API keys 
 
 - **Email:** 24co35@aitdgoa.edu.in
 - **Phone:** +91 7218694977
-- **HQ:** TripSathi Tower, Mandrem, Pernem, North Goa, Goa
+- **HQ:** Driftory Tower, Mandrem, Pernem, North Goa, Goa
 
 ## License
 

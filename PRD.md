@@ -1,5 +1,5 @@
 # Product Requirements Document (PRD)
-## TripSathi — Unified Indian Travel Planning Platform
+## Driftory — Unified Indian Travel Planning Platform
 
 **Team:** Crimson Syndicate  
 **Version:** 1.0 (MVP)  
@@ -10,7 +10,7 @@
 ## 1. Overview
 
 ### 1.1 Product Vision
-TripSathi is a unified travel planning platform that aggregates trains, buses, hotels, curated travel packages, and itinerary management into a single, accessible experience built for every Indian traveler — with a special focus on Tier-2/3 city users.
+Driftory is a unified travel planning platform that aggregates trains, buses, hotels, curated travel packages, and itinerary management into a single, accessible experience built for every Indian traveler — with a special focus on Tier-2/3 city users.
 
 ### 1.2 Problem Statement
 India's travel ecosystem is completely fragmented. No single platform connects IRCTC (trains), redBus (buses), and MakeMyTrip/OYO (hotels). Users spend 3–5 hours and 4+ apps to plan a single trip, missing better routes and cheaper options hidden across platforms. 800M+ Indians are underserved, with 600M+ Tier-2/3 city users having zero access to a unified, accessible tool.

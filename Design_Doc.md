@@ -1,5 +1,5 @@
 # Design Document
-## TripSathi — Unified Indian Travel Planning Platform
+## Driftory — Unified Indian Travel Planning Platform
 
 **Team:** Crimson Syndicate  
 **Version:** 1.0 (MVP)  
@@ -8,7 +8,7 @@
 
 ## 1. System Architecture
 
-TripSathi follows a **4-layer architecture** with a unidirectional data flow from user to data sources and back.
+Driftory follows a **4-layer architecture** with a unidirectional data flow from user to data sources and back.
 
 ```
 Layer 1: User (Browser/Mobile)
@@ -212,7 +212,7 @@ FAQs:
 
 ## 5. Aggregation Engine Design
 
-The core of TripSathi's value is the **Route Aggregation Engine** in the backend.
+The core of Driftory's value is the **Route Aggregation Engine** in the backend.
 
 ```
 Input: { from, to, date }

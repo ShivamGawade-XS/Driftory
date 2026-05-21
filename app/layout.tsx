@@ -4,9 +4,9 @@ import Layout from "@/components/layout/Layout"
 import ServiceWorkerRegister from "@/components/pwa/ServiceWorkerRegister"
 
 export const metadata: Metadata = {
-  title: "TripSathi - One Platform, Every Indian Journey",
+  title: "Driftory - One Platform, Every Indian Journey",
   description:
-    "TripSathi unifies trains, buses, hotels, and itinerary planning into one seamless platform built for every Indian traveler.",
+    "Driftory unifies trains, buses, hotels, and itinerary planning into one seamless platform built for every Indian traveler.",
   manifest: "/manifest.json",
 }
 
@@ -26,7 +26,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#4F46E5" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="TripSathi" />
+        <meta name="apple-mobile-web-app-title" content="Driftory" />
         <link rel="apple-touch-icon" href="/logo.png" />
       </head>
       <body>

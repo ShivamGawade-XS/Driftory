@@ -131,7 +131,7 @@ const getMockHotels = (city) => {
     results.push({
       id: `htl_${Math.floor(rand()*100000)}`,
       name: `${hChain} ${destCap}`,
-      provider: "TripSathi Stays",
+      provider: "Driftory Stays",
       city: destCap,
       pricePerNight: price,
       rating: +(rand() * 1.5 + 3.5).toFixed(1), // 3.5 to 5.0

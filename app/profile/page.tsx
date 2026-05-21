@@ -15,15 +15,15 @@ export default function ProfilePage() {
   const [user, setUser] = useState<User | null>(null)
 
   useEffect(() => {
-    const stored = typeof window !== "undefined" ? localStorage.getItem("tripsathi_user") : null
+    const stored = typeof window !== "undefined" ? localStorage.getItem("driftory_user") : null
     if (stored) {
       setUser(JSON.parse(stored))
     }
   }, [])
 
   const handleLogout = () => {
-    localStorage.removeItem("tripsathi_token")
-    localStorage.removeItem("tripsathi_user")
+    localStorage.removeItem("driftory_token")
+    localStorage.removeItem("driftory_user")
     window.dispatchEvent(new Event("auth-change"))
     router.push("/")
   }

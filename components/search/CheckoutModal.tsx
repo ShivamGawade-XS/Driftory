@@ -55,7 +55,7 @@ export default function CheckoutModal({ item, type, onClose }: CheckoutModalProp
 
   const handleProceed = (e: React.FormEvent) => {
     e.preventDefault()
-    const token = localStorage.getItem("tripsathi_token")
+    const token = localStorage.getItem("driftory_token")
     if (!token) { router.push("/login"); return }
     setShowPayment(true)
   }

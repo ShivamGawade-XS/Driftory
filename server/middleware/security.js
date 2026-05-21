@@ -4,7 +4,7 @@ const rateLimit = require("express-rate-limit")
 
 // cors configuration
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://tripsathi-web.vercel.app", process.env.FRONTEND_URL],
+  origin: ["http://localhost:3000", "https://driftory-web.vercel.app", process.env.FRONTEND_URL],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],

@@ -23,7 +23,7 @@ router.post('/chat', (req, res) => {
     session.step = 'IDLE';
     session.data = {};
     return res.json({ 
-      reply: "👋 Hi! I'm TripSathi's AI Assistant.\n\nI can help you with:\n🚆 Booking Trains & Buses\n🏝️ Recommending Packages\n🎫 Checking PNR statuses \n❌ Managing Cancellations\n\nJust tell me what you'd like to do naturally!"
+      reply: "👋 Hi! I'm Driftory's AI Assistant.\n\nI can help you with:\n🚆 Booking Trains & Buses\n🏝️ Recommending Packages\n🎫 Checking PNR statuses \n❌ Managing Cancellations\n\nJust tell me what you'd like to do naturally!"
     });
   }
 

@@ -33,7 +33,7 @@ export default function OfflinePage() {
         <button onClick={() => window.location.reload()} className="btn-primary py-3 px-8 mb-3 w-full">
           🔄 Try Again
         </button>
-        <p className="text-surface-400 text-xs">TripSathi works offline so you never lose your trip info in no-signal zones.</p>
+        <p className="text-surface-400 text-xs">Driftory works offline so you never lose your trip info in no-signal zones.</p>
       </div>
     </div>
   )

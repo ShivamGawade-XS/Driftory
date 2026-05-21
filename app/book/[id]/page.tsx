@@ -43,12 +43,12 @@ export default function BookingPage() {
     contactEmail: form.contactEmail,
     contactPhone: form.contactPhone,
     specialRequests: form.specialRequests,
-    transport: { type: "package", name: packageName, provider: "TripSathi Packages", class: form.class },
+    transport: { type: "package", name: packageName, provider: "Driftory Packages", class: form.class },
     to: packageName,
   })
 
   const handleSubmit = () => {
-    const token = localStorage.getItem("tripsathi_token")
+    const token = localStorage.getItem("driftory_token")
     if (!token) { router.push("/login"); return }
     setShowPayment(true)
   }

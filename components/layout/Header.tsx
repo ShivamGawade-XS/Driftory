@@ -15,7 +15,7 @@ export default function Header() {
   const [user, setUser] = useState<{name: string} | null>(null)
 
   const checkUser = () => {
-    const stored = typeof window !== "undefined" ? localStorage.getItem("tripsathi_user") : null
+    const stored = typeof window !== "undefined" ? localStorage.getItem("driftory_user") : null
     if (stored) {
       setUser(JSON.parse(stored))
     } else {
@@ -49,14 +49,10 @@ export default function Header() {
           </div>
           <nav className="hidden md:flex items-center gap-5">
             <Link href="/" className="text-surface-600 hover:text-primary-600 font-medium transition-colors text-sm">{t("nav_home")}</Link>
-            <Link href="/search" className="text-surface-600 hover:text-primary-600 font-medium transition-colors text-sm">{t("nav_search")}</Link>
-            <Link href="/packages" className="text-surface-600 hover:text-primary-600 font-medium transition-colors text-sm">{t("nav_packages") || "Packages"}</Link>
+            <Link href="/search" className="text-surface-600 hover:text-primary-600 font-medium transition-colors text-sm">Transport & Stays</Link>
+            <Link href="/packages" className="text-surface-600 hover:text-primary-600 font-medium transition-colors text-sm">Curated Packages</Link>
             <Link href="/dashboard" className="text-surface-600 hover:text-primary-600 font-medium transition-colors text-sm">{t("nav_saved")}</Link>
             <Link href="/faq" className="text-surface-600 hover:text-primary-600 font-medium transition-colors text-sm">{t("nav_help") || "Help"}</Link>
-            <Link href="/driftory" className="text-sm font-medium transition-colors relative" style={{ color: '#0F9B8E' }}>
-              🌊 Driftory
-              <span className="absolute -top-2 -right-6 text-[10px] font-bold px-1.5 py-0.5 rounded-full text-white" style={{ backgroundColor: '#0F9B8E' }}>New</span>
-            </Link>
             <ThemeToggle />
             <LanguageToggle />
             {user ? (
@@ -84,11 +80,10 @@ export default function Header() {
           <div className="md:hidden pb-4 animate-slide-down">
             <nav className="flex flex-col gap-2">
               <Link href="/" className="px-4 py-2 rounded-lg text-surface-600 hover:bg-surface-100" onClick={() => setMenuOpen(false)}>{t("nav_home")}</Link>
-              <Link href="/search" className="px-4 py-2 rounded-lg text-surface-600 hover:bg-surface-100" onClick={() => setMenuOpen(false)}>{t("nav_search")}</Link>
-              <Link href="/packages" className="px-4 py-2 rounded-lg text-surface-600 hover:bg-surface-100" onClick={() => setMenuOpen(false)}>{t("nav_packages") || "Packages"}</Link>
+              <Link href="/search" className="px-4 py-2 rounded-lg text-surface-600 hover:bg-surface-100" onClick={() => setMenuOpen(false)}>Transport & Stays</Link>
+              <Link href="/packages" className="px-4 py-2 rounded-lg text-surface-600 hover:bg-surface-100" onClick={() => setMenuOpen(false)}>Curated Packages</Link>
               <Link href="/dashboard" className="px-4 py-2 rounded-lg text-surface-600 hover:bg-surface-100" onClick={() => setMenuOpen(false)}>{t("nav_saved")}</Link>
               <Link href="/faq" className="px-4 py-2 rounded-lg text-surface-600 hover:bg-surface-100" onClick={() => setMenuOpen(false)}>{t("nav_help") || "Help"}</Link>
-              <Link href="/driftory" className="px-4 py-2 rounded-lg font-medium" style={{ color: '#0F9B8E' }} onClick={() => setMenuOpen(false)}>🌊 Driftory</Link>
               <div className="px-4 py-2 flex items-center gap-2">
                 <ThemeToggle />
                 <LanguageToggle />

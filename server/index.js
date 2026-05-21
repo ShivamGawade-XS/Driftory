@@ -50,7 +50,7 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`TripSathi server running on port ${PORT}`)
+  console.log(`Driftory server running on port ${PORT}`)
   console.log(`Environment: ${process.env.NODE_ENV || "development"}`)
 })
 

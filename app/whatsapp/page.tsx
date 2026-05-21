@@ -6,7 +6,7 @@ export default function WhatsAppBotPage() {
   const [linked, setLinked] = useState(false)
   const [input, setInput] = useState("")
   const [messages, setMessages] = useState([
-    { from: "bot", text: "👋 Hi! I'm TripSathi Bot.\n\nI can help you search and book travel packages, check PNR status, or answer questions.\n\nTry saying: *'Delhi to Mumbai'* or *'Search packages'*" }
+    { from: "bot", text: "👋 Hi! I'm Driftory Bot.\n\nI can help you search and book travel packages, check PNR status, or answer questions.\n\nTry saying: *'Delhi to Mumbai'* or *'Search packages'*" }
   ])
   const [isTyping, setIsTyping] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -67,7 +67,7 @@ export default function WhatsAppBotPage() {
             <div className="bg-[#075E54] rounded-t-2xl p-4 flex items-center gap-3 relative z-10">
               <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm">TS</div>
               <div>
-                <p className="text-white font-bold text-sm">TripSathi Bot</p>
+                <p className="text-white font-bold text-sm">Driftory Bot</p>
                 <p className="text-green-300 text-xs">{isTyping ? "typing..." : "online"}</p>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function WhatsAppBotPage() {
               <h2 className="text-xl font-bold text-surface-800 mb-4">How It Works</h2>
               <div className="space-y-4">
                 {[
-                  { step: "1", icon: "📱", title: "Save Our Number", desc: "Add +91-XXXXX-XXXXX to your contacts as 'TripSathi'" },
+                  { step: "1", icon: "📱", title: "Save Our Number", desc: "Add +91-XXXXX-XXXXX to your contacts as 'Driftory'" },
                   { step: "2", icon: "💬", title: "Send a Message", desc: "Type your search like 'Delhi to Goa bus tomorrow'" },
                   { step: "3", icon: "🎫", title: "Book Instantly", desc: "Select, confirm, and receive your e-ticket on WhatsApp" },
                 ].map(s => (

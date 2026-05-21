@@ -35,10 +35,10 @@ export default function EnhancedFooter() {
             <p className="mt-4 text-surface-400 text-sm leading-relaxed">{s.desc}</p>
             <div className="flex gap-3 mt-6">
               {[
-                { icon: "𝕏", url: "https://x.com/tripsathi", label: "X" },
-                { icon: "📘", url: "https://facebook.com/tripsathi", label: "Facebook" },
-                { icon: "📸", url: "https://instagram.com/tripsathi", label: "Instagram" },
-                { icon: "🔗", url: "https://linkedin.com/company/tripsathi", label: "LinkedIn" }
+                { icon: "𝕏", url: "https://x.com/driftory", label: "X" },
+                { icon: "📘", url: "https://facebook.com/driftory", label: "Facebook" },
+                { icon: "📸", url: "https://instagram.com/driftory", label: "Instagram" },
+                { icon: "🔗", url: "https://linkedin.com/company/driftory", label: "LinkedIn" }
               ].map((social, i) => (
                 <a key={i} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.label}
                   className="w-10 h-10 bg-surface-800 hover:bg-primary-600 rounded-xl flex items-center justify-center transition-colors text-sm">{social.icon}</a>
@@ -87,7 +87,7 @@ export default function EnhancedFooter() {
 
         <div className="mt-12 pt-8 border-t border-surface-800">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-surface-500">© {new Date().getFullYear()} TripSathi. {s.copyright}</p>
+            <p className="text-sm text-surface-500">© {new Date().getFullYear()} Driftory. {s.copyright}</p>
             <div className="flex items-center gap-4 text-surface-500 text-xs">
               <span>🔒 {s.ssl}</span>
               <span>💳 {s.pci}</span>

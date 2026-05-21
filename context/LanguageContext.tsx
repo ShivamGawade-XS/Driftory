@@ -45,7 +45,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // Load saved locale from localStorage
-    const saved = localStorage.getItem("tripsathi-locale") as Locale | null
+    const saved = localStorage.getItem("driftory-locale") as Locale | null
     const initial = saved && locales.includes(saved) ? saved : defaultLocale
     setLocaleState(initial)
     loadTranslations(initial)
@@ -53,7 +53,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLocale = useCallback((loc: Locale) => {
     setLocaleState(loc)
-    localStorage.setItem("tripsathi-locale", loc)
+    localStorage.setItem("driftory-locale", loc)
     loadTranslations(loc)
     // Update html lang attribute
     document.documentElement.lang = loc

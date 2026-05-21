@@ -100,7 +100,7 @@ export default function PaymentGateway({ amount, itemName, itemType, bookingPayl
     setProgress(0)
 
     // Save the booking via API
-    const token = typeof window !== "undefined" ? localStorage.getItem("tripsathi_token") : null
+    const token = typeof window !== "undefined" ? localStorage.getItem("driftory_token") : null
     if (token) {
       try {
         const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api/v1"}/bookings`, {
@@ -110,9 +110,9 @@ export default function PaymentGateway({ amount, itemName, itemType, bookingPayl
         })
         if (res.ok) {
           const data = await res.json()
-          const existing = JSON.parse(localStorage.getItem("tripsathi_bookings") || "[]")
+          const existing = JSON.parse(localStorage.getItem("driftory_bookings") || "[]")
           existing.unshift(data)
-          localStorage.setItem("tripsathi_bookings", JSON.stringify(existing))
+          localStorage.setItem("driftory_bookings", JSON.stringify(existing))
         }
       } catch {}
     }
@@ -201,7 +201,7 @@ export default function PaymentGateway({ amount, itemName, itemType, bookingPayl
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 p-5 text-white flex justify-between items-start">
           <div>
-            <p className="text-white/70 text-xs uppercase tracking-wider">TripSathi Secure Pay</p>
+            <p className="text-white/70 text-xs uppercase tracking-wider">Driftory Secure Pay</p>
             <h2 className="text-xl font-bold mt-1">₹{amount.toLocaleString()}</h2>
             <p className="text-white/80 text-sm mt-0.5">{itemName}</p>
           </div>
@@ -211,7 +211,7 @@ export default function PaymentGateway({ amount, itemName, itemType, bookingPayl
         {/* Security Badge */}
         <div className="flex items-center gap-2 px-5 py-2 bg-green-50 text-green-700 text-xs">
           <span>🔒</span>
-          <span>256-bit SSL Encrypted • PCI DSS Compliant • Secured by TripSathi</span>
+          <span>256-bit SSL Encrypted • PCI DSS Compliant • Secured by Driftory</span>
         </div>
 
         {step === "select" && (

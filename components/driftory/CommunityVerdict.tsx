@@ -26,7 +26,7 @@ export default function CommunityVerdict({ spotName, routeId, spotIndex, onSubmi
 
     setSubmitting(true)
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("tripsathi_token") : null
+      const token = typeof window !== "undefined" ? localStorage.getItem("driftory_token") : null
       await fetch("/api/driftory/verify", {
         method: "POST",
         headers: {

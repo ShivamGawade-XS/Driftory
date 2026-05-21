@@ -21,20 +21,20 @@ const ThemeContext = createContext<ThemeContextType>({
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [mode, setMode] = useState<ThemeMode>(() => {
     if (typeof window !== "undefined") {
-      return (localStorage.getItem("tripsathi_theme_mode") as ThemeMode) || "light"
+      return (localStorage.getItem("driftory_theme_mode") as ThemeMode) || "light"
     }
     return "light"
   })
   const [flavor, setFlavor] = useState<ThemeFlavor>(() => {
     if (typeof window !== "undefined") {
-      return (localStorage.getItem("tripsathi_theme_flavor") as ThemeFlavor) || "default"
+      return (localStorage.getItem("driftory_theme_flavor") as ThemeFlavor) || "default"
     }
     return "default"
   })
 
   useEffect(() => {
-    const savedMode = localStorage.getItem("tripsathi_theme_mode") as ThemeMode | null
-    const savedFlavor = localStorage.getItem("tripsathi_theme_flavor") as ThemeFlavor | null
+    const savedMode = localStorage.getItem("driftory_theme_mode") as ThemeMode | null
+    const savedFlavor = localStorage.getItem("driftory_theme_flavor") as ThemeFlavor | null
     if (savedMode) setMode(savedMode)
     if (savedFlavor) setFlavor(savedFlavor)
   }, [])
@@ -43,8 +43,8 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     const root = document.documentElement
     root.setAttribute("data-theme-mode", mode)
     root.setAttribute("data-theme-flavor", flavor)
-    localStorage.setItem("tripsathi_theme_mode", mode)
-    localStorage.setItem("tripsathi_theme_flavor", flavor)
+    localStorage.setItem("driftory_theme_mode", mode)
+    localStorage.setItem("driftory_theme_flavor", flavor)
   }, [mode, flavor])
 
   const toggleMode = () => setMode(prev => prev === "light" ? "dark" : "light")

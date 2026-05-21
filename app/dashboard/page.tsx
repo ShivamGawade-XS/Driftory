@@ -23,7 +23,7 @@ export default function DashboardPage() {
   const d = ds[locale] || ds.en
 
   useEffect(() => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("tripsathi_token") : null
+    const token = typeof window !== "undefined" ? localStorage.getItem("driftory_token") : null
     if (!token) {
       setLoading(false)
       setError("login_required")
@@ -37,7 +37,7 @@ export default function DashboardPage() {
       .then(([tripsData, bookingsData]) => {
         setTrips(Array.isArray(tripsData) ? tripsData : [])
         // merge API bookings with localStorage bookings (dedup by bookingRef)
-        const localBookings = JSON.parse(localStorage.getItem("tripsathi_bookings") || "[]")
+        const localBookings = JSON.parse(localStorage.getItem("driftory_bookings") || "[]")
         const apiBookings = Array.isArray(bookingsData) ? bookingsData : []
         const seen = new Set<string>()
         const merged: any[] = []
@@ -48,7 +48,7 @@ export default function DashboardPage() {
         merged.sort((a: any, b: any) => new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime())
         setBookings(merged)
         // sync merged set back to localStorage
-        localStorage.setItem("tripsathi_bookings", JSON.stringify(merged))
+        localStorage.setItem("driftory_bookings", JSON.stringify(merged))
       })
       .catch(() => setError("Failed to load dashboard"))
       .finally(() => setLoading(false))

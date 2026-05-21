@@ -22,7 +22,7 @@ export default function GroupSplitPage() {
 
   // Check URL for existing code
   useEffect(() => {
-    const saved = localStorage.getItem("tripsathi-split-code")
+    const saved = localStorage.getItem("driftory-split-code")
     if (saved) fetchGroup(saved)
   }, [])
 
@@ -33,7 +33,7 @@ export default function GroupSplitPage() {
       if (res.ok) {
         const data = await res.json()
         setGroup(data)
-        localStorage.setItem("tripsathi-split-code", code)
+        localStorage.setItem("driftory-split-code", code)
       }
     } catch {}
     setLoading(false)
@@ -51,7 +51,7 @@ export default function GroupSplitPage() {
       })
       if (res.ok) {
         const data = await res.json()
-        localStorage.setItem("tripsathi-split-code", data.code)
+        localStorage.setItem("driftory-split-code", data.code)
         await fetchGroup(data.code)
       }
     } catch {}
@@ -113,7 +113,7 @@ export default function GroupSplitPage() {
   }
 
   const leaveGroup = () => {
-    localStorage.removeItem("tripsathi-split-code")
+    localStorage.removeItem("driftory-split-code")
     setGroup(null)
   }
 

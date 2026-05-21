@@ -11,13 +11,13 @@ export default function ProtectedRoute({ children }: ProtectedRouteProps) {
   const router = useRouter()
 
   useEffect(() => {
-    const token = localStorage.getItem("tripsathi_token")
+    const token = localStorage.getItem("driftory_token")
     if (!token) {
       router.push("/login")
     }
   }, [router])
 
-  const token = typeof window !== "undefined" ? localStorage.getItem("tripsathi_token") : null
+  const token = typeof window !== "undefined" ? localStorage.getItem("driftory_token") : null
 
   if (!token) {
     return (

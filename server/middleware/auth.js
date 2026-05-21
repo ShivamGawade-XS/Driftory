@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken")
 const User = require("../models/User")
 const mongoose = require("mongoose")
 
-const JWT_FALLBACK = "tripsathi_hackathon_jwt_secret_2026"
+const JWT_FALLBACK = "driftory_hackathon_jwt_secret_2026"
 const getSecret = () => (process.env.JWT_SECRET || JWT_FALLBACK).trim()
 
 const isMockMode = () => {
@@ -29,7 +29,7 @@ const protect = async (req, res, next) => {
     const decoded = jwt.verify(token, getSecret())
 
     if (isMockMode()) {
-      req.user = { _id: "mock-user-123", name: "Demo User", email: "demo@tripsathi.com", language: "en" }
+      req.user = { _id: "mock-user-123", name: "Demo User", email: "demo@driftory.com", language: "en" }
       return next()
     }
 

@@ -48,7 +48,7 @@ export default function ContactPage() {
           <div className="space-y-6">
             <div className="bg-white rounded-2xl shadow-md p-8 flex items-start gap-4">
               <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-xl">📍</div>
-              <div><h3 className="font-bold text-surface-800 text-lg">{t.hq}</h3><p className="text-surface-500 mt-1">TripSathi Tower, Mandrem, Pernem<br />North Goa, Goa</p></div>
+              <div><h3 className="font-bold text-surface-800 text-lg">{t.hq}</h3><p className="text-surface-500 mt-1">Driftory Tower, Mandrem, Pernem<br />North Goa, Goa</p></div>
             </div>
             <div className="bg-white rounded-2xl shadow-md p-8 flex items-start gap-4">
               <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-xl">📞</div>

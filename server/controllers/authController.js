@@ -81,7 +81,7 @@ const getMe = async (req, res) => {
   try {
     if (isMockMode()) {
       return res.json({
-        _id: "mock-user-123", name: "Demo User", email: "demo@tripsathi.com",
+        _id: "mock-user-123", name: "Demo User", email: "demo@driftory.com",
         language: "en", createdAt: new Date()
       })
     }

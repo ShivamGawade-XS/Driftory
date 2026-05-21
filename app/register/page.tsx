@@ -21,8 +21,8 @@ export default function RegisterPage() {
 
     try {
       const data = await registerApi(name, email, password)
-      localStorage.setItem("tripsathi_token", data.token)
-      localStorage.setItem("tripsathi_user", JSON.stringify(data))
+      localStorage.setItem("driftory_token", data.token)
+      localStorage.setItem("driftory_user", JSON.stringify(data))
       window.dispatchEvent(new Event("auth-change"))
       router.push("/dashboard")
     } catch (err) {

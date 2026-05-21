@@ -1,10 +1,10 @@
-# Project Report: TripSathi
+# Project Report: Driftory
 **A Unified Travel Companion for Bharat**
 
 ---
 
 ## 1. Abstract
-The Indian travel sector comprises a highly lucrative yet severely fragmented ecosystem. Travelers currently navigate multiple platforms—IRCTC for trains, RedBus for buses, MakeMyTrip for hotels—leading to poor user experiences, hidden costs, and split context. **TripSathi** solves this by offering a unified, vernacular-first travel planning platform. It aggregates various modes of transport alongside hotel bookings into a single, intuitive interface. Built on a modern tech stack (Next.js 14, React 18, Express.js), the platform boasts a resilient dual-layer caching system, language localization without page reloads, and a complete simulated payment architecture, making it a robust, fully-demonstrable MVP ready for the digital Bharat.
+The Indian travel sector comprises a highly lucrative yet severely fragmented ecosystem. Travelers currently navigate multiple platforms—IRCTC for trains, RedBus for buses, MakeMyTrip for hotels—leading to poor user experiences, hidden costs, and split context. **Driftory** solves this by offering a unified, vernacular-first travel planning platform. It aggregates various modes of transport alongside hotel bookings into a single, intuitive interface. Built on a modern tech stack (Next.js 14, React 18, Express.js), the platform boasts a resilient dual-layer caching system, language localization without page reloads, and a complete simulated payment architecture, making it a robust, fully-demonstrable MVP ready for the digital Bharat.
 
 ---
 
@@ -18,7 +18,7 @@ The current travel booking workflow in India is fundamentally broken for the ave
 4. **Poor UI/UX:** Traditional platforms suffer from cluttered interfaces, excessive popups, and slow page loads.
 
 ### 2.2 Objectives
-TripSathi was conceptualized with the following core objectives:
+Driftory was conceptualized with the following core objectives:
 - **Unify Search:** Create a single search engine that returns aggregated transport and hotel results contextually.
 - **Democratize Access:** Implement instant vernacular translations (Hindi, Marathi, Telugu, Tamil, English).
 - **Premium Experience:** Build an application that feels fluid, lightweight, and modern, using advanced CSS techniques.
@@ -28,14 +28,14 @@ TripSathi was conceptualized with the following core objectives:
 
 ## 3. Proposed Solution
 
-TripSathi acts as the ultimate intermediary, handling the heavy lifting of routing and accommodation aggregation. Instead of forcing the user into a specific travel funnel (e.g., exclusively booking trains), the platform allows users to build an **Itinerary**—a holistic cart containing their journey and their stay. It includes curated travel packages, an AI chatbot interface for quick PNR/status checks, and an automated expense-splitting UI.
+Driftory acts as the ultimate intermediary, handling the heavy lifting of routing and accommodation aggregation. Instead of forcing the user into a specific travel funnel (e.g., exclusively booking trains), the platform allows users to build an **Itinerary**—a holistic cart containing their journey and their stay. It includes curated travel packages, an AI chatbot interface for quick PNR/status checks, and an automated expense-splitting UI.
 
 ---
 
 ## 4. System Architecture
 
 ### 4.1 High-Level Architecture
-TripSathi employs a decoupled client-server architecture deployed entirely on Vercel's Edge/Serverless infrastructure.
+Driftory employs a decoupled client-server architecture deployed entirely on Vercel's Edge/Serverless infrastructure.
 
 - **Client Tier (Frontend):** 
   - Framework: Next.js 14 (App Router)
@@ -82,14 +82,14 @@ To deliver a complete end-to-end product feel, we engineered a custom React `Pay
 - Generates cryptographically unique `TXN` IDs and digital receipts upon completion.
 
 ### 6.4 The Theme Engine & "Stranger Things" Mode
-TripSathi utilizes CSS Custom Properties mapped to Tailwind semantic colors (`bg-surface-100`, `text-primary-600`). This enabled the creation of multiple themes. Beyond standard Light and Dark modes, we implemented a hackathon-special "Stranger Things" mode—dynamically altering CSS to apply 1980s neon glows, crimson text, and dark grid backgrounds globally.
+Driftory utilizes CSS Custom Properties mapped to Tailwind semantic colors (`bg-surface-100`, `text-primary-600`). This enabled the creation of multiple themes. Beyond standard Light and Dark modes, we implemented a hackathon-special "Stranger Things" mode—dynamically altering CSS to apply 1980s neon glows, crimson text, and dark grid backgrounds globally.
 
 ---
 
 ## 7. Challenges and Technical Solutions
 
 **Challenge 1: CORS Errors on Vercel Deployment**
-*Issue:* The Vercel-deployed frontend (`tripsathi-web.vercel.app`) was blocked from accessing the separated Vercel-deployed backend due to Cross-Origin restrictions.
+*Issue:* The Vercel-deployed frontend (`driftory-web.vercel.app`) was blocked from accessing the separated Vercel-deployed backend due to Cross-Origin restrictions.
 *Solution:* Re-engineered the Express `cors` middleware to explicitly whitelist the production URL and added `app.set("trust proxy", 1)` to prevent Vercel's load balancers from triggering our internal rate limiters.
 
 **Challenge 2: Hard-crash on Login without MongoDB**
@@ -100,7 +100,7 @@ TripSathi utilizes CSS Custom Properties mapped to Tailwind semantic colors (`bg
 
 ## 8. Future Scope & Enhancements
 
-While TripSathi is a highly polished MVP, the roadmap for moving to a true production environment includes:
+While Driftory is a highly polished MVP, the roadmap for moving to a true production environment includes:
 1. **Global Distribution System (GDS) Integration:** Replacing our procedural data generation engine with live API keys from Amadeus, IRCTC, and Makemytrip B2B.
 2. **Razorpay Integration:** Replacing the simulated payment frontend with a real Razorpay checkout SDK to capture live Indian fiat transactions.
 3. **Live GPS Tracking:** Integrating Mapbox APIs for live bus tracking and PNR status charting.
@@ -108,4 +108,4 @@ While TripSathi is a highly polished MVP, the roadmap for moving to a true produ
 ---
 
 ## 9. Conclusion
-TripSathi successfully proves that travel planning does not need to be stressful, fragmented, or strictly English-based. By focusing heavily on resilient architecture, immersive UI/UX, and localized accessibility, we have created a unified travel platform that represents the future of digital tourism in India. The application stands as a robust, fully-functional, and visually striking demonstration of modern web engineering.
+Driftory successfully proves that travel planning does not need to be stressful, fragmented, or strictly English-based. By focusing heavily on resilient architecture, immersive UI/UX, and localized accessibility, we have created a unified travel platform that represents the future of digital tourism in India. The application stands as a robust, fully-functional, and visually striking demonstration of modern web engineering.
